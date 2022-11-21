@@ -5,8 +5,8 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/security/Pausable.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract Sufyan is ERC20, Pausable, Ownable {
-    constructor() ERC20("Sufyan", "Sufi") {}
+contract TJ is ERC20, Pausable, Ownable {
+    constructor() ERC20("TalhaJavaid", "TJ") {}
 
     function pause() public onlyOwner {
         _pause();
