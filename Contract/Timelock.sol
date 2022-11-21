@@ -6,7 +6,7 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-contract TaebaToken is ERC20, Ownable {
+contract TimeLock is ERC20, Ownable {
      using SafeMath for uint256;
 
   uint public duration = 600000;  // 10 Minutes in milliseconds
@@ -15,7 +15,7 @@ contract TaebaToken is ERC20, Ownable {
   uint256 private _totalSupply;
   address private tokensOwner;
 
-    constructor() ERC20("TaebaToken", "TTK") {
+    constructor() ERC20("Optimus Prime", "OP") {
         end = block.timestamp + duration;
         _totalSupply = 0;
         tokensOwner = msg.sender;
